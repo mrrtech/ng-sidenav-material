@@ -1,0 +1,39 @@
+.topContainer {
+  backdrop-filter: white;
+}
+.toolbar-filler {
+  flex: 1 1 auto;
+}
+.app-sidenav {
+  width: 300px;
+}
+.mat-toolbar.mat-primary {
+  background-color: #fff;
+}
+
+mat-toolbar {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  z-index: 1;
+}
+mat-sidenav {
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+  width: 200px;
+}
+.closeImg {
+  font-size: 20px;
+  padding-top: 10px;
+  color: #000;
+}
+.closeBg {
+  background-color: #fff;
+}
+.closeBg:hover {
+  color: #0e0e0e;
+}
+
+.sideImg {
+  width: 30%;
+  height: 60%;
+  background-color: #fff;
+}

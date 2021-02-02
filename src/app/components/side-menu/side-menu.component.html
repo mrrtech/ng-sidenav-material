@@ -1,0 +1,44 @@
+<mat-nav-list>
+  <div fxLayout="column">
+    <div class="menu-heading">
+      {{ sidenavtitle }}
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+      <ul class="nav flex-column">
+        <li
+          class="nav-item-base navItemCustom"
+          *ngFor="let entry of menu; let i = index"
+        >
+          <a
+            id="{{ entry.topId }}"
+            class="nav-link collapsed"
+            href="#"
+            data.toggle="collapsed"
+            [attr.data-target]="'#' + entry.targetId + '_' + i"
+          >
+            <i class="{{ entry.topIcon }}" aria-hidden="true"></i>&nbsp;
+            <span class="sidemenulabel">{{ entry.topLabel }}</span>
+          </a>
+          <div
+            class="collapse"
+            [attr.id]="entry.targetId + '_' + i"
+            aria-expanded="false"
+          >
+            <ul class="flex-column pl-2 nav">
+              <li *ngFor="let subItem of entry.subMenu" class="nav-item">
+                <a
+                  mat-list-item
+                  [routerLink]="subItem.routerLink"
+                  (click)="sidenavToggle()"
+                >
+                  <i class="{{ subItem.icon }}" aria-hidden="true"></i>
+                  <span class="sidemenusublabel">{{ subItem.label }}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</mat-nav-list>

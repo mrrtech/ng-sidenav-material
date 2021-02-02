@@ -1,0 +1,44 @@
+<mat-toolbar id="appToolbar" class="toolbarMain">
+  <button
+    md-icon-button
+    (click)="sidenavToggle()"
+    class="btnbg border border-0"
+    [hidden]="isNavBarOpened"
+  >
+    <i class="fa fa-bars bars"></i>
+  </button>
+  <h1 class="component-title">
+    <a class="title-link title" (click)="go('')">{{ title }}</a>
+  </h1>
+  <span class="toolbar-filler"></span>
+  <div class="btn-group">
+    <button
+      type="button"
+      class="btn float-right dropdown-toggle userName"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <small class="fa-10">{{ userId }}</small
+      ><i class="fa fa-user-circle-o fa-lg text-white"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <button
+        type="button"
+        class="dropdown-item pt-0 border-bottom"
+        (click)="go('')"
+      >
+        <i class="fa fa-home fiserv-base-color" aria-hidden="true"></i>
+        <span class="sidemenusublabel"><small>Home</small></span>
+      </button>
+      <button
+        type="button"
+        class="dropdown-item pt-0 border-bottom"
+        (click)="signOut()"
+      >
+        <i class="fa fa-sign-out fiserv-base-color" aria-hidden="true"></i>
+        <span class="sidemenusublabel"><small>Logout</small></span>
+      </button>
+    </div>
+  </div>
+</mat-toolbar>

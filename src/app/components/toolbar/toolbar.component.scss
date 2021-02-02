@@ -1,0 +1,41 @@
+.title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-left: 1px solid white;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding-left: 10px;
+  position: relative;
+  color: white;
+  top: -5px;
+  display: block;
+  letter-spacing: 0.1rem;
+}
+
+.toolbarMain {
+  background-color: #fff;
+  border-bottom: 0.5px solid #000;
+  border-top: 0.5px solid #000;
+  .btnbg {
+    background-color: #fff;
+  }
+}
+.userName {
+  font-size: 14px;
+  padding: 18px;
+  font-weight: normal;
+  color: #000;
+}
+.toolbar-filler {
+  flex: 1 1 auto;
+}
+.bars {
+  //padding-top: 10px;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+}
+// .bars:hover {
+//   color: #004165;
+// }

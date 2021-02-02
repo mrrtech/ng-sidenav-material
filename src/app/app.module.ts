@@ -1,18 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {
+  NgModule,
+  CUSTOM_ELEMENTS_SCHEMA,
+  NO_ERRORS_SCHEMA,
+} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material/material.module';
 import { AppComponent } from './app.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   declarations: [
-    AppComponent
+    AppComponent,
+    SideMenuComponent,
+    ToolbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
