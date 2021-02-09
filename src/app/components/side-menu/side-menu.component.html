@@ -13,7 +13,7 @@
             id="{{ entry.topId }}"
             class="nav-link collapsed"
             href="#"
-            data.toggle="collapsed"
+            data-toggle="collapse"
             [attr.data-target]="'#' + entry.targetId + '_' + i"
           >
             <i class="{{ entry.topIcon }}" aria-hidden="true"></i>&nbsp;
@@ -25,7 +25,7 @@
             aria-expanded="false"
           >
             <ul class="flex-column pl-2 nav">
-              <li *ngFor="let subItem of entry.subMenu" class="nav-item">
+              <li class="nav-item" *ngFor="let subItem of entry.subMenu">
                 <a
                   mat-list-item
                   [routerLink]="subItem.routerLink"

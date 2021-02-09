@@ -20,6 +20,10 @@ mat-sidenav {
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
   width: 200px;
 }
+
+.mat-list-base .mat-list-item {
+  height: 35px !important;
+}
 .closeImg {
   font-size: 20px;
   padding-top: 10px;
@@ -36,4 +40,8 @@ mat-sidenav {
   width: 30%;
   height: 60%;
   background-color: #fff;
+}
+.main {
+  margin: 5px;
+  background-color: white;
 }

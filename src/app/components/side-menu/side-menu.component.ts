@@ -7,8 +7,7 @@ import { menu } from './menu.config';
 })
 export class SideMenuComponent implements OnInit {
   menu = menu;
-  @Input()
-  sidenavtitle!: string;
+  @Input() sidenavtitle!: string;
   @Output() sidenavEvent = new EventEmitter<string>();
 
   constructor() {}

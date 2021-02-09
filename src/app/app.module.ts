@@ -12,6 +12,8 @@ import { AppComponent } from './app.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ActionlistComponent } from './components/actionlist/actionlist.component';
+import { ClientprofileComponent } from './components/clientprofile/clientprofile.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
@@ -20,6 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SideMenuComponent,
     ToolbarComponent,
     FooterComponent,
+    ActionlistComponent,
+    ClientprofileComponent,
   ],
   imports: [
     BrowserModule,
